@@ -160,6 +160,38 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
   - **链接**：[官网](https://mcp.folay.top) | [GitHub 仓库](https://github.com/OldJii/mcp-dock)  
   - **Tips**：本地优先，不需要账号；支持 Cursor、Claude Code、VS Code、Gemini CLI 等 14 个客户端。
 
+- **Cline**
+  - **简介**：VS Code 中的自主编程 Agent，也提供 SDK/CLI 形态。
+  - **功能**：原生 MCP 客户端，可读写文件、运行命令，并可安装 MCP 服务器扩展能力。
+  - **链接**：[GitHub 仓库](https://github.com/cline/cline)
+  - **Tips**：VS Code 用户的 MCP 首选之一。
+
+- **Continue**
+  - **简介**：开源编程 Agent，支持 VS Code 与 JetBrains。
+  - **功能**：可配置本地/远程 MCP 服务器，接入自定义模型与工具。
+  - **链接**：[GitHub 仓库](https://github.com/continuedev/continue)
+
+- **Goose**
+  - **简介**：Block 开源的可扩展本地 AI Agent。
+  - **功能**：原生 MCP 宿主，可安装/执行/编辑/测试代码，支持任意 LLM，提供桌面版 + CLI 双形态。
+  - **链接**：[GitHub 仓库](https://github.com/block/goose)
+  - **Tips**：MCP 生态最活跃的开源 Agent 之一。
+
+- **AnythingLLM**
+  - **简介**：本地优先的全栈 AI 应用，一体化文档/知识库/Agent。
+  - **功能**：内置 MCP 兼容，接入工具与数据源，支持桌面与自托管。
+  - **链接**：[GitHub 仓库](https://github.com/Mintplex-Labs/anything-llm)
+
+- **LibreChat**
+  - **简介**：增强版开源多模型聊天平台，支持自托管多用户。
+  - **功能**：内置 MCP、Agents、Code Interpreter，可切换 Claude/GPT/Gemini 等模型。
+  - **链接**：[GitHub 仓库](https://github.com/danny-avila/LibreChat)
+
+- **Dive**
+  - **简介**：开源 MCP Host 桌面应用。
+  - **功能**：对接任意支持 function calling 的 LLM，可视化管理 MCP 服务器。
+  - **链接**：[GitHub 仓库](https://github.com/OpenAgentPlatform/Dive)
+
 - **其他MCP客户端资源**  
   - [awesome-mcp-clients](https://github.com/punkpeye/awesome-mcp-clients)
 
@@ -281,6 +313,10 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [Necmttn/ax](https://github.com/Necmttn/ax) | 本地优先的 AI 编程代理遥测与召回图谱，可通过 MCP 查询 Claude Code、Codex、Cursor、OpenCode、Pi 的会话、工具调用、技能和成本数据。 | 社区实现, TypeScript 开发 📇, 本地运行 🏠, SurrealDB 存储, 编码代理可观测性与工作流复盘, AGPL-3.0。 |
 | [kerlenton/mcpsnoop](https://github.com/kerlenton/mcpsnoop) | 「MCP 界的 Wireshark」——透明代理，在终端实时显示 AI 客户端（Claude Desktop / Cursor / Claude Code）与 MCP server 之间的每一次真实工具调用。零配置包裹 server 命令即可逐帧查看 JSON-RPC，支持调用重放、能力握手检查、挂起调用检测与过滤查询。 | 社区实现, Go 开发 🏎️, 本地运行 🏠, MCP 流量调试 (TUI), 单一二进制无运行时依赖, MIT。 |
 | [msradam/ocarina](https://github.com/msradam/ocarina) | 面向 MCP server 的自动化测试框架。用 YAML 剧本（rondo）驱动一个或多个真实 server 的工具调用，支持步骤间传值、分支、循环、重试与 `expect` 断言，链路中无需 LLM，每次运行确定可复现且零 token 成本，开箱即可作 CI 健康检查。 | 社区实现, Go 开发 🏎️, 本地运行 🏠, MCP 确定性测试/自动化 (YAML), MIT。 |
+| [docker/mcp-gateway](https://github.com/docker/mcp-gateway) | Docker 官方 MCP 网关与 `docker mcp` CLI 插件，安全聚合、编排并容器化运行多个 MCP 服务器。 | 官方实现 (Docker) 🎖️, Go 开发 🏎️, 本地/云端 🏠☁️, MCP 网关/聚合。 |
+| [ref-tools/ref-tools-mcp](https://github.com/ref-tools/ref-tools-mcp) | 为编程代理提供公共/私有库的文档检索，减少调用陌生 API 时的幻觉并节省上下文窗口。 | 社区实现, TypeScript 开发 📇, 云服务 ☁️, 文档检索。 |
+| [apollographql/apollo-mcp-server](https://github.com/apollographql/apollo-mcp-server) | Apollo 官方 MCP 服务器，把 GraphQL 操作暴露为 AI 可调用的工具。 | 官方实现 (Apollo GraphQL) 🎖️, Rust 开发 🦀, 本地/云端 🏠☁️, GraphQL 工具化。 |
+| [huggingface/hf-mcp-server](https://github.com/huggingface/hf-mcp-server) | Hugging Face 官方 MCP 服务器，检索 Hub 上的模型、数据集、论文与 Spaces 并调用相关工具。 | 官方实现 (Hugging Face) 🎖️, TypeScript 开发 📇, 云服务 ☁️, HF Hub 集成。 |
 
 
 ---
@@ -436,6 +472,7 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [weibaohui/kom](https://github.com/weibaohui/kom)                    | 提供 MCP 多集群 Kubernetes 管理和操作。可作为 SDK 集成到项目中，含近 50 个内置工具 (支持标准/CRD)。 | 社区实现, Go 开发 🏎️, 云端/本地 ☁️🏠, 多集群 K8s 管理 (SDK)。                                        |
 | [wenhuwang/mcp-k8s-eye](https://github.com/wenhuwang/mcp-k8s-eye)      | 用于 Kubernetes 管理的 MCP 服务器，分析集群和应用健康状况。                                   | 社区实现, Go 开发 🏎️, 云端/本地 ☁️🏠, K8s 管理与健康分析。                                         |
 | [erikhoward/adls-mcp-server](https://github.com/erikhoward/adls-mcp-server) | 用于 Azure Data Lake Storage 的 MCP 服务器。可管理容器、读/写/上传/下载文件及管理元数据。   | 社区实现, Python 开发 🐍, 云端/本地 ☁️🏠, Azure Data Lake Storage 管理。                              |
+| [hashicorp/terraform-mcp-server](https://github.com/hashicorp/terraform-mcp-server) | HashiCorp 官方出品，让 AI 与 Terraform 生态（Registry、Provider/模块文档等）深度集成，辅助 IaC 开发。 | 官方实现 (HashiCorp) 🎖️, Go 开发 🏎️, 本地/云端 🏠☁️, Terraform IaC。 |
 
 ---
 
@@ -493,6 +530,7 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [GEOScore](https://github.com/henu-wang/geoscore-mcp) | AI 搜索优化（GEO）MCP 服务器。扫描网站的 AI 搜索就绪度，生成 llms.txt、Schema.org 修复、meta 标签优化。 | 社区实现, TypeScript 开发 📇, 本地运行 🏠, 支持 Claude/Cursor/Windsurf。 |
 | [Episkey-G/GrokSearch-rs](https://github.com/Episkey-G/GrokSearch-rs) | Rust 编写的 MCP 服务器，提供 Grok 联网搜索与 Tavily 支持的来源检索，为 AI 代理补充实时网络信息。 | 社区实现, Rust 开发 🦀, 云服务 ☁️, Grok 联网搜索 + Tavily 检索。 |
 | [NovadaLabs/Novada-mcp](https://github.com/NovadaLabs/Novada-mcp) | 托管 Streamable-HTTP MCP 服务器，提供 25+ 网页数据工具：搜索、SERP、抓取、提取、地图、爬取、深度研究及 6 种代理类型，覆盖 195 个国家。免安装，每月 1000 次免费调用。`npx novada-mcp` | 社区实现, TypeScript 开发 📇, 云服务 ☁️, 全面网页数据采集平台, MIT。 |
+| [Brave Search (官方)](https://github.com/brave/brave-search-mcp-server) | Brave 官方出品的搜索 MCP 服务器，支持网页、本地、图片、新闻、视频搜索。 | 官方实现 (Brave) 🎖️, TypeScript 开发 📇, 云服务 ☁️, Brave 搜索引擎。 |
 
 ---
 
@@ -738,6 +776,8 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [anaisbetts/mcp-youtube](https://github.com/anaisbetts/mcp-youtube)              | 获取 YouTube 字幕 (另一版本)。                                                                    | 社区实现, TypeScript 开发 📇, 云服务 ☁️, YouTube 字幕。                                                  |
 | [IDEA-Research/DINO-X-MCP](https://github.com/IDEA-Research/DINO-X-MCP)              |  让 AI 具备细粒度的图像理解能力：识别、定位、描述你看到的任何目标。                                                                     | 官方实现（IDEA-Research）, TypeScript 开发 📇, 本地运行 🏠, 图像识别理解。                                                  |
 | [BibiGPT](https://github.com/JimmyLv/bibigpt-skill) | AI 驱动的视频、音频和播客总结工具，支持 YouTube、Bilibili、TikTok 等平台。提供远程 MCP 服务器 (https://bibigpt.co/api/mcp) 和 Claude Code Skill 两种集成方式。 | 社区实现, 云服务 ☁️, 视频/音频/播客总结。 |
+| [ElevenLabs (官方)](https://github.com/elevenlabs/elevenlabs-mcp) | ElevenLabs 官方 MCP 服务器，提供文本转语音、语音克隆、音频转录、配音等能力。 | 官方实现 (ElevenLabs) 🎖️, Python 开发 🐍, 云服务 ☁️, 语音合成 TTS。 |
+| [MiniMax (官方)](https://github.com/MiniMax-AI/MiniMax-MCP) | MiniMax 官方 MCP 服务器，调用其文本转语音、图像生成与视频生成 API。 | 官方实现 (MiniMax) 🎖️, Python 开发 🐍, 云服务 ☁️, 语音/图像/视频生成。 |
 
 ---
 
@@ -814,6 +854,8 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [Beever Atlas](https://github.com/Beever-AI/beever-atlas) | 开源团队知识库，内建 MCP 服务器。Neo4j 类型化知识图谱 + Weaviate 向量数据库，支持 Slack/Discord/Teams 等对话导入，通过 LiteLLM 自选 LLM。 | 社区实现, Python 开发 🐍, 本地运行 🏠, Neo4j 知识图谱 + Weaviate 向量搜索, Apache 2.0。 |
 | [Agentage Memory](https://memory.agentage.io) | 跨厂商共享记忆层：一份你拥有的 Markdown 记忆，Claude / Cursor / ChatGPT 都能通过 MCP 读写，并本地镜像为纯 `.md` 文件可随时导出。提供 6 个工具（`memory__search/read/write/edit/list/delete`）。 | 官方实现 (agentage) 🎖️, TypeScript 开发 📇, 云服务 ☁️, 远程 MCP (Streamable HTTP)，端点 `memory.agentage.io/mcp`，OAuth 2.1 + PKCE。 |
 | [Goldentrii/AgentRecall](https://github.com/Goldentrii/AgentRecall) | 跨会话的持久化累积记忆系统，使用智能距离协议召回最相关历史记忆。提供 5 个工具：`session_start`、`remember`、`recall`、`check`、`session_end`。`npx agent-recall-mcp` | 社区实现, TypeScript 开发 📇, 本地/云端 🏠☁️, 智能距离协议记忆召回, MIT。 |
+| [getzep/graphiti](https://github.com/getzep/graphiti) | Zep 出品，为 AI Agent 构建实时、时序感知的知识图谱记忆，内置 MCP 服务器供 Claude/Cursor 等读写记忆。 | 官方实现 (Zep) 🎖️, Python 开发 🐍, 本地/云端 🏠☁️, 实时知识图谱记忆。 |
+| [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 高性能、可本地运行的记忆与上下文引擎，提供 MCP 接入，为 AI 提供可扩展的长期记忆 API。 | 社区实现, TypeScript 开发 📇, 本地/云端 🏠☁️, 长期记忆引擎。 |
 
 ---
 
@@ -874,6 +916,7 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 | [SecretiveShell/MCP-timeserver](https://github.com/SecretiveShell/MCP-timeserver)    | 访问任何时区的本地时间和获取当前本地时间。 (已在“其他”部分列出Time)                               | 社区实现, Python 开发 🐍, 本地运行 🏠, 时间/时区工具。                                          |
 | [webcoderz/MCP-Geo](https://github.com/webcoderz/MCP-Geo)                        | 用于 nominatim, ArcGIS, Bing 的地理编码 MCP 服务器。                                         | 社区实现, Python 开发 🐍, 本地运行 🏠, 地理编码服务。                                           |
 | [ip2location/mcp-ip2location-io](https://github.com/ip2location/mcp-ip2location-io) | 使用 IP2Location.io API 获取 IP 地址地理位置和网络信息。                                                 | 官方参考, Python 开发 🐍, 云服务 ☁️, IP 地址信息 (IP2Location.io)。                                   |
+| [Joooook/12306-mcp](https://github.com/Joooook/12306-mcp) | 基于 MCP 的 12306 火车票查询服务器，支持车次、余票、经停站等信息查询。 | 社区实现, TypeScript 开发 📇, 本地运行 🏠, 中国铁路 12306 购票信息。 |
 
 ---
 
@@ -1097,6 +1140,11 @@ MCP 客户端是 AI 的“操作台”，以下是几个热门选择：
 - [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) Go 语言的 MCP 实现，提供简洁的 API 用于快速构建 MCP 服务器，让工具与资源开发更高效。
 - [MCP Inspector](https://github.com/modelcontextprotocol/inspector) 官方可视化调试工具，可连接并交互测试任意 MCP 服务器，查看工具、资源、提示词，开发调试必备。
 - [mcp-use](https://github.com/mcp-use/mcp-use) 开源 MCP 客户端库，几行代码即可让任意 LLM 连接并调用 MCP 服务器，快速构建自定义 Agent。
+- [modelcontextprotocol/go-sdk](https://github.com/modelcontextprotocol/go-sdk) MCP 官方 Go SDK，与 Google 合作维护，用于构建 MCP 服务器与客户端。
+- [modelcontextprotocol/csharp-sdk](https://github.com/modelcontextprotocol/csharp-sdk) MCP 官方 C#/.NET SDK，与 Microsoft 合作维护。
+- [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) MCP 官方 Rust SDK (rmcp)，适合高性能场景。
+- [punkpeye/fastmcp](https://github.com/punkpeye/fastmcp) 构建 MCP 服务器的 TypeScript 框架，简洁 API 快速暴露工具/资源/提示词。
+- [langchain-ai/langchain-mcp-adapters](https://github.com/langchain-ai/langchain-mcp-adapters) 官方适配器，将 MCP 工具无缝接入 LangChain / LangGraph Agent。
 
 ---
 
